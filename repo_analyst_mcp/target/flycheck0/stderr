@@ -1,0 +1,9 @@
+error: failed to select a version for `serde`.
+    ... required by package `repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp)`
+versions that meet the requirements `^1.0` (locked to 1.0.228) are: 1.0.228
+
+package `repo_analyst_mcp` depends on `serde` with feature `dervie` but `serde` does not have that feature.
+ package `serde` does have feature `derive`
+
+
+failed to select a version for `serde` which could resolve this conflict

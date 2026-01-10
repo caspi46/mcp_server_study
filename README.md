@@ -1,1 +1,12 @@
-# mcp_python_i
+# mcp_server_study 
+
+## with Rust: 
+- I'm using Rust because I want to practice how mcp server is used in Rust, while I already have experience with Python. 
+- Love Rust! 
+
+## LLM API
+- I'll use Gemini API key because it's free! 
+
+
+## Reference
+https://redandgreen.co.uk/building-your-first-mcp-server-in-rust/ai-ml/
