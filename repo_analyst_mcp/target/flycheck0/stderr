@@ -1,9 +1,52 @@
-error: failed to select a version for `serde`.
-    ... required by package `repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp)`
-versions that meet the requirements `^1.0` (locked to 1.0.228) are: 1.0.228
+   0.130657041s  INFO prepare_target{force=false package_id=repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp) target="repo_analyst_mcp"}: cargo::core::compiler::fingerprint: fingerprint error for repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp)/Check { test: false }/TargetInner { name: "repo_analyst_mcp", doc: true, ..: with_path("/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp/src/main.rs", Edition2024) }
+   0.131160291s  INFO prepare_target{force=false package_id=repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp) target="repo_analyst_mcp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp/target/debug/.fingerprint/repo_analyst_mcp-70f74a0cbfe41c4c/bin-repo_analyst_mcp`
 
-package `repo_analyst_mcp` depends on `serde` with feature `dervie` but `serde` does not have that feature.
- package `serde` does have feature `derive`
+Caused by:
+    No such file or directory (os error 2)
 
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.229037083s  INFO prepare_target{force=false package_id=repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp) target="repo_analyst_mcp"}: cargo::core::compiler::fingerprint: fingerprint error for repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp)/Check { test: true }/TargetInner { name: "repo_analyst_mcp", doc: true, ..: with_path("/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp/src/main.rs", Edition2024) }
+   0.229053500s  INFO prepare_target{force=false package_id=repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp) target="repo_analyst_mcp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp/target/debug/.fingerprint/repo_analyst_mcp-76c3e5a7ad44179d/test-bin-repo_analyst_mcp`
 
-failed to select a version for `serde` which could resolve this conflict
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking repo_analyst_mcp v0.1.0 (/Users/kennykim/Documents/mcp_study/mcp_server_study/repo_analyst_mcp)
+error: could not compile `repo_analyst_mcp` (bin "repo_analyst_mcp" test) due to 4 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `repo_analyst_mcp` (bin "repo_analyst_mcp") due to 4 previous errors
