@@ -1,1 +1,0 @@
-Pin<Box<dyn Future<Output = Result<rmcp::model::CallToolResult, rmcp::model::ErrorData>> + Send>>

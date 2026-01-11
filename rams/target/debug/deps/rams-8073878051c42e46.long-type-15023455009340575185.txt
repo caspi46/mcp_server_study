@@ -1,2 +1,0 @@
-(Tool, for<'a> fn(&'a RepoServer, Parameters<RepoOverview>) -> Pin<Box<(dyn Future<Output = Result<rmcp::model::CallToolResult, ErrorData>> + Send + 'a)>> {RepoServer::overview_structure})
-(Tool, for<'a> fn(&'a RepoServer, Parameters<RepoOverview>) -> Pin<Box<(dyn Future<Output = Result<rmcp::model::CallToolResult, ErrorData>> + Send + 'a)>> {RepoServer::overview_structure}): IntoToolRoute<RepoServer, _>

@@ -1,1 +1,0 @@
-/Users/kennykim/Documents/mcp_study/mcp_server_study/rams/target/debug/rams: /Users/kennykim/Documents/mcp_study/mcp_server_study/rams/src/main.rs /Users/kennykim/Documents/mcp_study/mcp_server_study/rams/src/mcp_server.rs
